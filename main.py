@@ -1,8 +1,8 @@
-from err_catch import Opener
+from err import Cheker
 
 
-choice = int(input("Выберите номер задания(у нас : 1) \n"))
+choice = float(input("Выберите номер задания(Всего 1) \n"))
 match choice:
     case 1:
-        obj = Opener('var10.csv')    
-        obj.catcher()
+        obj = Cheker('var10.csv')    
+        obj.catch()
